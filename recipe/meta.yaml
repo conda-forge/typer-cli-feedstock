@@ -1,18 +1,18 @@
 {% set name = "typer-cli" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('_', '-') }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 55b9794f347311e9c2fb1ce4b10a66945cd95f2f30e2452b1bf96c3ab3163632
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('_', '-') }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e25a622456b7f45cff0143fb788af7c538466a76e8ece062944b91d113997929
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   entry_points:
     - typer = typer_cli.main:main
 
