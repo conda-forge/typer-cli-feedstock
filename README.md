@@ -5,11 +5,11 @@ Home: https://github.com/tiangolo/typer-cli
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typer-cli-feedstock/blob/master/LICENSE.txt)
 
 Summary: Run Typer scripts with completion, without having to create a package, using Typer CLI.
 
-
+Documentation: https://typer.tiangolo.com/typer-cli/
 
 Current build status
 ====================
