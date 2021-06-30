@@ -10,7 +10,7 @@ source:
   sha256: d2c4a7a5c0326c20fb0970eed3c2173f76ba6b8b33d9bbece3a3dd91d673f096
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   entry_points:
